@@ -83,6 +83,29 @@ str = lpad( 'boop', 12, 'beep' );
     // returns 'epbeepboop'
     ```
 
+-   This function differs from [`String.prototype.padStart`][mdn-string-padstart] in the following ways:
+
+    -   The function is **not** guaranteed to return a string having a length exactly equal to `len` (as explained above).
+    -   The function does **not** truncate `pad` (from the end) in order to ensure the returned string has length `len`.
+    
+    To replicate [`String.prototype.padStart`][mdn-string-padstart] truncation behavior
+
+    ```javascript
+    var floorb = require( '@stdlib/math-base-special-floorb' );
+
+    function padStart( str, len, pad ) {
+        var n;
+        if ( len <= str.length ) {
+            return str;
+        }
+        n = floorb( len-str.length, 1, pad.length ) + str.length;
+        return pad.substring( 0, len-n ) + lpad( str, n, pad );
+    }
+
+    var str = padStart( 'boop', 10, 'beep' );
+    // returns 'bebeepboop'
+    ```
+
 </section>
 
 <!-- /.notes -->
@@ -184,6 +207,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/string-base-left-pad/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/string-base-left-pad/main/LICENSE
+
+[mdn-string-padstart]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
 
 </section>
 
