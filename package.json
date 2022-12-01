@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@stdlib/math-base-special-ceil": "^0.0.x",
-    "@stdlib/string-base-repeat": "^0.0.x"
+    "@stdlib/string-base-repeat": "^0.0.x",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.x"
   },
   "devDependencies": {
     "@stdlib/assert-is-string": "^0.0.x",
