@@ -24,38 +24,30 @@ limitations under the License.
 
 > Left pad a string.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-base-left-pad
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-lpad = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var lpad = require( 'path/to/vendor/umd/string-base-left-pad/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.lpad;
-})();
-</script>
+var lpad = require( '@stdlib/string-base-left-pad' );
 ```
 
 #### lpad( str, len, pad )
@@ -86,6 +78,9 @@ str = lpad( 'boop', 12, 'beep' );
     ```javascript
     var str = lpad( 'boop', 10, 'beep' ); // => length 12
     // returns 'beepbeepboop'
+
+    str = str.substring( 0, 10 ); // => length 10
+    // returns 'beepbeepbo'
 
     str = str.substring( str.length-10 ); // => length 10
     // returns 'epbeepboop'
@@ -124,25 +119,29 @@ str = lpad( 'boop', 12, 'beep' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var papply = require( '@stdlib/utils-papply' );
+var papplyRight = require( '@stdlib/utils-papply-right' );
+var naryFunction = require( '@stdlib/utils-nary-function' );
+var map = require( '@stdlib/utils-map' );
+var logEach = require( '@stdlib/console-log-each' );
+var lpad = require( '@stdlib/string-base-left-pad' );
 
+// Define a string to pad:
 var str = 'beep';
-var i;
-for ( i = 0; i < 100; i++ ) {
-    console.log( lpad( str, discreteUniform( str.length, str.length+10 ), 'b' ) );
-}
 
-})();
-</script>
-</body>
-</html>
+// Generate random lengths:
+var lens = discreteUniform( 10, str.length, str.length+10 );
+
+// Create a function for creating padded strings:
+var fcn = naryFunction( papply( papplyRight( lpad, 'b' ), str ), 1 );
+
+// Generate padded strings:
+var out = map( lens, fcn );
+
+// Print results:
+logEach( '%s', out );
 ```
 
 </section>
