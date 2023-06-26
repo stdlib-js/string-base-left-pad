@@ -43,7 +43,12 @@
   "devDependencies": {
     "@stdlib/assert-is-string": "^0.0.8",
     "@stdlib/bench": "^0.0.12",
-    "@stdlib/random-base-discrete-uniform": "^0.0.6",
+    "@stdlib/console-log-each": "^0.0.2",
+    "@stdlib/random-array-discrete-uniform": "github:stdlib-js/random-array-discrete-uniform#main",
+    "@stdlib/utils-map": "^0.0.1",
+    "@stdlib/utils-nary-function": "^0.0.1",
+    "@stdlib/utils-papply": "^0.0.10",
+    "@stdlib/utils-papply-right": "^0.0.8",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git"
