@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@esm/index.mjs';
+import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@v0.1.0-esm/index.mjs';
 ```
 
 #### lpad( str, len, pad )
@@ -126,7 +126,7 @@ import papplyRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-papply-righ
 import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
 import map from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map@esm/index.mjs';
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@esm/index.mjs';
+import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@v0.1.0-esm/index.mjs';
 
 // Define a string to pad:
 var str = 'beep';
