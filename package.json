@@ -43,9 +43,9 @@
   "devDependencies": {
     "@stdlib/assert-is-string": "^0.1.0",
     "@stdlib/bench": "^0.1.0",
-    "@stdlib/console-log-each": "^0.0.2",
-    "@stdlib/random-array-discrete-uniform": "^0.0.1",
-    "@stdlib/utils-map": "^0.0.1",
+    "@stdlib/console-log-each": "^0.1.0",
+    "@stdlib/random-array-discrete-uniform": "^0.1.0",
+    "@stdlib/utils-map": "^0.1.0",
     "@stdlib/utils-nary-function": "^0.1.0",
     "@stdlib/utils-papply": "^0.1.0",
     "@stdlib/utils-papply-right": "^0.1.0",
