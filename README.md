@@ -35,19 +35,30 @@ limitations under the License.
 
 > Left pad a string.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-base-left-pad
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-base-left-pad/tags). For example,
-
-```javascript
-import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@v0.1.0-esm/index.mjs';
+var lpad = require( '@stdlib/string-base-left-pad' );
 ```
 
 #### lpad( str, len, pad )
@@ -94,7 +105,7 @@ str = lpad( 'boop', 12, 'beep' );
     To replicate [`String.prototype.padStart`][mdn-string-padstart] truncation behavior
 
     ```javascript
-    import floorb from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floorb@esm/index.mjs';
+    var floorb = require( '@stdlib/math-base-special-floorb' );
 
     function padStart( str, len, pad ) {
         var n;
@@ -119,19 +130,14 @@ str = lpad( 'boop', 12, 'beep' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import papply from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-papply@esm/index.mjs';
-import papplyRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-papply-right@esm/index.mjs';
-import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
-import map from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map@esm/index.mjs';
-import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var papply = require( '@stdlib/utils-papply' );
+var papplyRight = require( '@stdlib/utils-papply-right' );
+var naryFunction = require( '@stdlib/utils-nary-function' );
+var map = require( '@stdlib/utils-map' );
+var logEach = require( '@stdlib/console-log-each' );
+var lpad = require( '@stdlib/string-base-left-pad' );
 
 // Define a string to pad:
 var str = 'beep';
@@ -147,10 +153,6 @@ var out = map( lens, fcn );
 
 // Print results:
 logEach( '%s', out );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -174,7 +176,7 @@ logEach( '%s', out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -204,8 +206,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/string-base-left-pad.svg
 [npm-url]: https://npmjs.org/package/@stdlib/string-base-left-pad
 
-[test-image]: https://github.com/stdlib-js/string-base-left-pad/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/string-base-left-pad/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/string-base-left-pad/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/string-base-left-pad/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/string-base-left-pad/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/string-base-left-pad?branch=main
