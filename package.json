@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string-base-left-pad",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Left pad a string.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/math-base-special-ceil": "^0.1.0",
+    "@stdlib/math-base-special-ceil": "^0.1.1",
     "@stdlib/string-base-repeat": "^0.1.1"
   },
   "devDependencies": {
