@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,37 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var lpad = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof lpad, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function left pads a string with spaces', function test( t ) {
-	var str = lpad( 'a', 5, ' ' );
-	t.equal( str, '    a', 'left padded with spaces' );
-	t.end();
-});
-
-tape( 'the function supports left padding a string with a custom pad string', function test( t ) {
-	var str = lpad( 'beep', 10, 'b' );
-	t.equal( str, 'bbbbbbbeep', 'left padded to desired length' );
-	t.end();
-});
-
-tape( 'the function left pads a string such that an output string may exceed the specified length (minimum bound)', function test( t ) {
-	var str = lpad( 'a', 5, 'beepboop' );
-	t.equal( str, 'beepboopa', 'left padded and length exceeds minimum length' );
-	t.end();
-});
-
-tape( 'if the specified string length is less than or equal to the input string length, the function returns the input string', function test( t ) {
-	t.equal( lpad( 'boop', 2, 'beep' ), 'boop', 'returns input string (<)' );
-	t.equal( lpad( 'boop', 4, 'beep' ), 'boop', 'returns input string (=)' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
