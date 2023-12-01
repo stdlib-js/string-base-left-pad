@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@stdlib/assert-is-string": "^0.1.1",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/console-log-each": "^0.1.0",
     "@stdlib/random-array-discrete-uniform": "^0.1.0",
     "@stdlib/utils-map": "^0.1.0",
