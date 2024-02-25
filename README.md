@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-base-left-pad/tags). For example,
+
+```javascript
 import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@v0.2.1-deno/mod.js';
 ```
 
@@ -121,7 +126,7 @@ import papplyRight from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-papply-righ
 import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
 import map from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-map@deno/mod.js';
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@deno/mod.js';
-import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@v0.2.1-deno/mod.js';
+import lpad from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-left-pad@deno/mod.js';
 
 // Define a string to pad:
 var str = 'beep';
