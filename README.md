@@ -165,6 +165,12 @@ logEach( '%s', out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/string-base/right-pad`][@stdlib/string/base/right-pad]</span><span class="delimiter">: </span><span class="description">right pad a string.</span>
+
 </section>
 
 <!-- /.related -->
@@ -242,6 +248,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/string-base-left-pad/main/LICENSE
 
 [mdn-string-padstart]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
+
+<!-- <related-links> -->
+
+[@stdlib/string/base/right-pad]: https://github.com/stdlib-js/string-base-right-pad
+
+<!-- </related-links> -->
 
 </section>
 
