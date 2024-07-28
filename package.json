@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string-base-left-pad",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Left pad a string.",
   "license": "Apache-2.0",
   "author": {
@@ -38,20 +38,20 @@
   },
   "dependencies": {
     "@stdlib/math-base-special-ceil": "^0.2.1",
-    "@stdlib/string-base-repeat": "^0.2.1"
+    "@stdlib/string-base-repeat": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/assert-is-string": "^0.2.1",
+    "@stdlib/assert-is-string": "^0.2.2",
     "@stdlib/console-log-each": "^0.2.1",
     "@stdlib/random-array-discrete-uniform": "^0.2.1",
     "@stdlib/utils-map": "^0.2.1",
-    "@stdlib/utils-nary-function": "^0.2.1",
-    "@stdlib/utils-papply": "^0.2.1",
-    "@stdlib/utils-papply-right": "^0.2.1",
+    "@stdlib/utils-nary-function": "^0.2.2",
+    "@stdlib/utils-papply": "^0.2.2",
+    "@stdlib/utils-papply-right": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.1"
+    "@stdlib/bench-harness": "^0.2.2"
   },
   "engines": {
     "node": ">=0.10.0",
