@@ -37,21 +37,21 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/math-base-special-ceil": "^0.2.2",
+    "@stdlib/math-base-special-ceil": "^0.2.3",
     "@stdlib/string-base-repeat": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/assert-is-string": "^0.2.2",
-    "@stdlib/console-log-each": "^0.2.3",
-    "@stdlib/random-array-discrete-uniform": "^0.2.1",
-    "@stdlib/utils-map": "^0.2.1",
-    "@stdlib/utils-nary-function": "^0.2.3",
-    "@stdlib/utils-papply": "^0.2.2",
-    "@stdlib/utils-papply-right": "^0.2.2",
+    "@stdlib/assert-is-string": "^0.2.3",
+    "@stdlib/console-log-each": "^0.2.4",
+    "@stdlib/random-array-discrete-uniform": "^0.2.2",
+    "@stdlib/utils-map": "^0.2.2",
+    "@stdlib/utils-nary-function": "^0.2.4",
+    "@stdlib/utils-papply": "^0.2.3",
+    "@stdlib/utils-papply-right": "^0.2.3",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.2"
+    "@stdlib/bench-harness": "^0.2.3"
   },
   "engines": {
     "node": ">=0.10.0",
