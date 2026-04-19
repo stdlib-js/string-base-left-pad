@@ -44,6 +44,7 @@
     "@stdlib/assert-is-string": "^0.2.3",
     "@stdlib/console-log-each": "^0.2.4",
     "@stdlib/random-array-discrete-uniform": "^0.2.2",
+    "@stdlib/string-format": "^0.2.3",
     "@stdlib/utils-map": "^0.2.2",
     "@stdlib/utils-nary-function": "^0.2.4",
     "@stdlib/utils-papply": "^0.2.3",
